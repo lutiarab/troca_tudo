@@ -7,21 +7,27 @@
     <title>Troca tudo</title>
 </head>
 <body>
+
+    <!--topo-->
     <main class="main">
         <div class="user">
+
             <img id="user-avatar" src="/avatars/default-avatar.jpg" alt="Avatar Padrão">
             <h3 id="user-name">Usuário não logado</h3>
 
              <!-- Bloco de Curtidas e Descurtidas com imagens -->
-             <div class="interacoes">
+            <div class="interacoes">
+
                 <div class="curtidas-bloco">
                     <span id="user-likes">0</span>
                     <img src="/images/curtidas.jpg" alt="Curtir" class="icon-curtida">
                 </div>
+
                 <div class="descurtidas-bloco">
                     <span id="user-dislikes">0</span>
                     <img src="/images/descurtidas.jpg" alt="Descurtir" class="icon-descurtida">
                 </div>
+
             </div>
 
             <button id="login-btn" onclick="mostrarModal()">Entrar</button>
@@ -29,10 +35,13 @@
 
         </div>
 
+
+        <!--grades-->
+
         <section>
             <div class="grade1">
                 <p>Produto 1</p>
-                <img src="/images/produto1.jpg" alt="produto1" >
+                <img class="produto1" src="/images/produto1.jpg" alt="produto1" >
                 <hr>
                 <div class="icons_img">
                     <img src="/images/like.jpg" alt="like">
@@ -83,9 +92,11 @@
 <!--........................................................................................................-->
 
       <!-- Modal de Login -->
-      <div id="login-modal" class="modal">
+    <div id="login-modal" class="modal">
+
         <div class="modal-content login-modal">
             <span class="close" onclick="fecharModal()">&times;</span>
+
             <h2>Login</h2>
 
             <!-- Campos de email e senha -->
@@ -102,38 +113,10 @@
             <!-- Mensagem de erro -->
             <p id="login-error" style="color: red;"></p>
         </div>
+
     </div>
 
    <!--.....................................................................................................-->
-
-    <!-- Modal de Comentário -->
-    <div id="comentario-modal" class="modal">
-        <div class="modal-content comentario-modal">
-            <span class="close" onclick="fecharComentarioModal()">&times;</span>
-            <h2>Comentário</h2>
-            
-            <!-- Caixa de texto para comentário -->
-            <textarea id="comentario-texto" rows="4" placeholder="Digite seu comentário"></textarea>
-            
-            <!-- Inputs de cidade e estado alinhados lado a lado -->
-            <div class="comentario-localizacao">
-                <input type="text" id="cidade" placeholder="Cidade">
-                <input type="text" id="estado" placeholder="Estado">
-            </div>
-            
-            <!-- Botões de ação -->
-            <div class="comentario-botoes">
-                <button onclick="adicionarOuEditarComentario()">Salvar</button>
-                <button onclick="excluirComentario()">Excluir</button>
-            </div>
-
-            <!-- Mensagem de erro ou status -->
-            <p id="comentario-mensagem" style="color: red;"></p>
-        </div>
-    </div>
-
-
-
 
     <footer>
 
@@ -143,14 +126,14 @@
              <p class="footer-logo">Troca Tudo</p>
         
             <ul class="lista-footer">
-                <img src="/icons/facebook.svg" alt="facebook">
-                <img src="/icons/instagram.svg" alt="instagram">
-                <img src="/icons/tiktok.svg" alt="tiktok">
-                <img src="/icons/youtube.svg" alt="youtube">
-                <img src="/icons/x.svg" alt="x">
+                <li class="icones"><img src="/icons/facebook.svg" alt="facebook"></li>
+                <li class="icones"><img src="/icons/instagram.svg" alt="instagram"></li>
+                <li class="icones"><img src="/icons/tiktok.svg" alt="tiktok"></li>
+                <li class="icones"><img src="/icons/youtube.svg" alt="youtube"></li>
+                <li class="icones"><img src="/icons/x.svg" alt="x"></li>
             </ul>
 
-                <p>&copy; 2024 Troca Tudo Corp.</p>
+                <p class="footer-copyright">&copy; 2024 Troca Tudo Corp.</p>
 
         </div>
         
