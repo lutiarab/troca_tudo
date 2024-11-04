@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require ('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const path = require('path'); // Para lidar com caminhos de arquivos estáticos
